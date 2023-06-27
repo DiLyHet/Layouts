@@ -1,0 +1,34 @@
+@import './variables.scss';
+
+.section-3 {
+    height: 189px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.section-3__three-rectangles {
+    display: flex;
+    border-bottom: $grey-border;
+}
+
+.section-3__rectangles {
+    min-width: 107px;
+    min-height: 94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3__rectangles:nth-child(1) {
+    border-right: $grey-border;
+}
+
+.section-3__rectangles:nth-child(2) {
+    border-right: $grey-border;
+}
+
+.section-3__img {
+    filter: brightness(0);
+    max-width: 70%;
+}
