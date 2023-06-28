@@ -1928,6 +1928,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: none;
   }
   .footer__up-side_logo {
     display: flex;
