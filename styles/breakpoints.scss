@@ -1,5 +1,9 @@
 @media screen and (min-width: 1400px) {
 
+    .page {
+        align-items: center;
+    }
+
     // HEADER
 
     .header {
@@ -789,23 +793,30 @@
     .footer {
         min-width: 1400px;
         min-height: 389px;
+        
     }
 
     .footer__part-1 {
         display: flex;
         width: 1400px;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         border-bottom: $grey-border;
     }
 
     .footer__part-2 {
         display: flex;
         width: 1400px;
-        justify-content: space-between;
+       justify-content: space-between;
+       margin-left:53px;
+       margin-right: 53px;
+       
     }
 
     .footer__down-side {
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .footer__up-side_logo {

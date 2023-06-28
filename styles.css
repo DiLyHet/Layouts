@@ -1267,6 +1267,9 @@
 }
 
 @media screen and (min-width: 1400px) {
+  .page {
+    align-items: center;
+  }
   .header {
     width: 1140px;
     min-height: 62px;
@@ -1910,16 +1913,21 @@
   .footer__part-1 {
     display: flex;
     width: 1400px;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1499999911);
   }
   .footer__part-2 {
     display: flex;
     width: 1400px;
     justify-content: space-between;
+    margin-left: 53px;
+    margin-right: 53px;
   }
   .footer__down-side {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .footer__up-side_logo {
     display: flex;
