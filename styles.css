@@ -1909,6 +1909,8 @@
   .footer {
     min-width: 1400px;
     min-height: 389px;
+    justify-content: center;
+    align-items: center;
   }
   .footer__part-1 {
     display: flex;
@@ -1921,21 +1923,27 @@
     display: flex;
     width: 1400px;
     justify-content: space-between;
-    margin-left: 53px;
-    margin-right: 53px;
   }
   .footer__down-side {
     display: flex;
     justify-content: center;
     align-items: center;
     border-top: none;
+    margin-top: 0px;
+  }
+  .footer__down-side_products {
+    margin-top: 0;
+    height: 210px;
+  }
+  .footer__down-side_company {
+    margin-top: 0;
+    height: 210px;
   }
   .footer__up-side_logo {
     display: flex;
     margin-top: 0;
     justify-content: baseline;
     align-items: baseline;
-    margin-left: 130px;
   }
   .footer__up-side_icon {
     width: 60px;
@@ -1966,12 +1974,6 @@
   }
   .footer__down-side {
     width: 785px;
-  }
-  .footer__down-side_products {
-    margin-top: 60px;
-  }
-  .footer__down-side_company {
-    margin-top: 60px;
   }
   .footer__down-side_other-links {
     margin-left: 130px;
