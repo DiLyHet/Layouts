@@ -1926,8 +1926,7 @@
   }
   .footer__down-side {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
     border-top: none;
     margin-top: 0px;
   }
@@ -1946,7 +1945,11 @@
     align-items: baseline;
   }
   .footer__up-side_icon {
-    width: 60px;
+    width: 66px;
+    height: 60px;
+  }
+  .footer__up-side_icon-img {
+    width: 66px;
     height: 60px;
   }
   .footer__up-side_text {
