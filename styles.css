@@ -1933,10 +1933,12 @@
   .footer__down-side_products {
     margin-top: 0;
     height: 210px;
+    width: 265px;
   }
   .footer__down-side_company {
     margin-top: 0;
     height: 210px;
+    width: 265px;
   }
   .footer__up-side_logo {
     display: flex;
