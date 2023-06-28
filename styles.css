@@ -188,7 +188,6 @@
 }
 
 .section-1__big-text {
-  margin-top: 35px;
   width: 290px;
   height: 205px;
   margin-left: 15px;
@@ -1870,6 +1869,10 @@
     margin-top: 50px;
     margin-left: 224px;
   }
+  .section-11__img-icon {
+    width: 269.406px;
+    height: 296px;
+  }
   .section-11__title {
     margin-top: 106px;
     width: 555px;
@@ -2056,6 +2059,7 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 40px;
+  letter-spacing: -0.357px;
 }
 
 .second-type-text {
