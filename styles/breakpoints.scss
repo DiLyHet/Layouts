@@ -130,9 +130,12 @@
     // SECTION 1
 
     .section-1 {
-    
         flex-direction: row;
         max-height: 609px;
+    }
+
+    .section-1_main {
+        display: flex;
     }
 
     .section-1__part-1 {
