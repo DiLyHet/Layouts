@@ -188,6 +188,7 @@
 }
 
 .section-1__big-text {
+  margin-top: 35px;
   width: 290px;
   height: 205px;
   line-height: 50px;
@@ -931,6 +932,7 @@
 
 .section-7__img-second {
   border-radius: 8px;
+  background-color: rgb(49, 65, 197);
 }
 
 .section-7__img-fourth {
@@ -965,7 +967,7 @@
   height: 28px;
   text-align: center;
   margin-top: 22px;
-  color: rgb(43, 41, 45) !important;
+  color: rgb(255, 255, 255);
   font-size: 22px;
   font-weight: 700;
   line-height: 28px;
