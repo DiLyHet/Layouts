@@ -1903,7 +1903,8 @@
     margin-top: 26px;
     width: 385px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
   }
   .section-11__part-2_1 {
     display: flex;
