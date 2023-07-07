@@ -1,24 +1,29 @@
 @import './header.scss';
 @import './footer.scss';
-@import './section_1.scss';
-@import './section_2.scss';
-@import './section_3.scss';
-@import './section_4.scss';
-@import './section_5.scss';
-@import './section_6.scss';
-@import './section_7.scss';
-@import './section_9.scss';
-@import './section_10.scss';
-@import './section_11.scss';
+@import './header-section.scss';
+@import './about.scss';
+@import './customers.scss';
+@import './features.scss';
+@import './inbox.scss';
+@import './communication.scss';
+@import './audience.scss';
+@import './feedback.scss';
+@import './hiring.scss';
+@import './order.scss';
 @import './breakpoints.scss';
 @import './variables.scss';
+
+.body {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
 
 .page {
     max-width: 320px;
     min-height: 100vh;
     font-family: $main-font-family;
     font-size: $main-font-size;
-   
 }
 
 .first-type-text {

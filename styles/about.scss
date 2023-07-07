@@ -1,0 +1,41 @@
+@import './variables.scss';
+
+.about {
+    height: 428px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(244, 245, 247, 1);
+
+    &__first-paragraf {
+        width: 290px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 46px;
+        justify-content: space-between;
+    }
+
+    &__second-paragraf {
+        width: 290px;
+        height: 136px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 46px;
+        justify-content: space-between;
+    }
+
+    &__title {
+        color: $first-text-color;
+        font-weight: $bold;
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    &__text {
+        color: $first-text-color;
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
