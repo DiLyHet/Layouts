@@ -1,143 +1,143 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 .footer {
-    margin-top: auto;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+
+  &__up-side {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
-    &__up-side {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        &_links {
-            display: flex;
-            margin-top: 31px;
-            margin-bottom: 40px;
-        }
-
-        &_icon {
-            width: 65px;
-            height: 60px;
-            margin-top: 40px;
-            padding: 0;
-        }
-
-        &_icon-img {
-            width: 65px;
-            height: 60px;
-            padding: 0;
-        }
-
-        &_text {
-            width: 290px;
-            height: 51px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 20px;
-        }
-
-        &_text-first {
-            font-size: 20px;
-            font-weight: $bold;
-            color: $first-text-color;
-            line-height: 25px;
-        }
-
-        &_text-second {
-            font-size: 20px;
-            font-weight: normal;
-            color: $second-text-color;
-            line-height: 25px;
-        }
-
-        &_links-appstore {
-            width: 135px;
-            height: 40px;
-        }
-
-        &_links-googleplay {
-            width: 116px;
-            height: 40px;
-        }
-
-        &_links-space {
-            width: 10px;
-        }
+    &_links {
+      display: flex;
+      margin-top: 31px;
+      margin-bottom: 40px;
     }
 
-    &__down-side {
-        border-top: 1px solid rgba(227, 227, 227, 1);
-
-        &_title {
-            width: 290px;
-            height: 28px;
-            font-size: 22px;
-            color: $first-text-color;
-            line-height: 28px;
-            font-weight: $bold;
-        }
-
-        &_list-item {
-            width: 290px;
-            height: 30px;
-            line-height: 30px;
-            font-size: 18px;
-            color: $second-text-color;
-            list-style-type: none;
-        }
-
-        &_list {
-            padding: 0;
-        }
-
-        &_other-links {
-            display: flex;
-            height: 22px;
-            line-height: 22px;
-            width: 180px;
-            justify-content: space-between;
-        }
-
-        &_other-links-item {
-            font-size: 14px;
-            color: $second-text-color;
-        }
-
-        &_social-links {
-            margin-left: 15px;
-        }
-
-        &_social-links-img:nth-child(1) {
-            margin-top: 31px;
-            margin-bottom: 23px;
-            width: 21px;
-            height: 16px;
-            margin-right: 20px;
-        }
-
-        &_social-links-img:nth-child(2) {
-            margin-top: 31px;
-            margin-bottom: 22px;
-            width: 18px;
-            height: 17px;
-            margin-right: 20px;
-        }
-
-        &_social-links-img:nth-child(3) {
-            margin-top: 30px;
-            margin-bottom: 23px;
-            width: 18px;
-            height: 17px;
-            margin-right: 20px;
-        }
-
-        &_company,
-        &_products,
-        &_other-links {
-            margin-left: 15px;
-            margin-top: 30px;
-        }
+    &_icon {
+      width: 65px;
+      height: 60px;
+      margin-top: 40px;
+      padding: 0;
     }
+
+    &_icon-img {
+      width: 65px;
+      height: 60px;
+      padding: 0;
+    }
+
+    &_text {
+      width: 290px;
+      height: 51px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    &_text-base {
+      font-size: 20px;
+      font-weight: $bold;
+      color: $base-text-color;
+      line-height: 25px;
+    }
+
+    &_text-subordinate {
+      font-size: 20px;
+      font-weight: normal;
+      color: $subordinate-text-color;
+      line-height: 25px;
+    }
+
+    &_links-appstore {
+      width: 135px;
+      height: 40px;
+    }
+
+    &_links-googleplay {
+      width: 116px;
+      height: 40px;
+    }
+
+    &_links-space {
+      width: 10px;
+    }
+  }
+
+  &__down-side {
+    border-top: 1px solid rgba(227, 227, 227, 1);
+
+    &_title {
+      width: 290px;
+      height: 28px;
+      font-size: 22px;
+      color: $base-text-color;
+      line-height: 28px;
+      font-weight: $bold;
+    }
+
+    &_list-item {
+      width: 290px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 18px;
+      color: $subordinate-text-color;
+      list-style-type: none;
+    }
+
+    &_list {
+      padding: 0;
+    }
+
+    &_other-links {
+      display: flex;
+      height: 22px;
+      line-height: 22px;
+      width: 180px;
+      justify-content: space-between;
+    }
+
+    &_other-links-item {
+      font-size: 14px;
+      color: $subordinate-text-color;
+    }
+
+    &_social-links {
+      margin-left: 15px;
+    }
+
+    &_social-links-img:nth-child(1) {
+      margin-top: 31px;
+      margin-bottom: 23px;
+      width: 21px;
+      height: 16px;
+      margin-right: 20px;
+    }
+
+    &_social-links-img:nth-child(2) {
+      margin-top: 31px;
+      margin-bottom: 22px;
+      width: 18px;
+      height: 17px;
+      margin-right: 20px;
+    }
+
+    &_social-links-img:nth-child(3) {
+      margin-top: 30px;
+      margin-bottom: 23px;
+      width: 18px;
+      height: 17px;
+      margin-right: 20px;
+    }
+
+    &_company,
+    &_products,
+    &_other-links {
+      margin-left: 15px;
+      margin-top: 30px;
+    }
+  }
 }

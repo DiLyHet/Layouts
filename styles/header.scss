@@ -1,42 +1,42 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 .header {
-    height: 64px;
-    line-height: 64px;
+  height: 64px;
+  line-height: 64px;
+  display: flex;
+  align-items: center;
+
+  &__logo {
     display: flex;
-    align-items: center;
 
-    &__logo {
-        display: flex;
-
-        &_icon {
-            width: 48px;
-            height: 48px;
-            margin: 8px 0px 8px 15px;
-        }
-
-        &_icon-img {
-            width: 48px;
-            height: 48px;
-        }
-
-        &_text {
-            margin-left: 13px;
-            font-weight: $bold;
-            color: $first-text-color;
-            font-size: 20px;
-        }
+    &_icon {
+      width: 48px;
+      height: 48px;
+      margin: 8px 0px 8px 15px;
     }
 
-    &__menu {
-        margin-left: auto;
-        border-left: $grey-border;
-
-        &_icon {
-            margin-left: 20px;
-            margin-right: 20px;
-            width: 18px;
-            height: 13px;
-        }
+    &_icon-img {
+      width: 48px;
+      height: 48px;
     }
+
+    &_text {
+      margin-left: 13px;
+      font-weight: $bold;
+      color: $base-text-color;
+      font-size: 20px;
+    }
+  }
+
+  &__menu {
+    margin-left: auto;
+    border-left: $grey-border;
+
+    &_icon {
+      margin-left: 20px;
+      margin-right: 20px;
+      width: 18px;
+      height: 13px;
+    }
+  }
 }

@@ -1,35 +1,34 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 .customers {
-    height: 189px;
+  height: 189px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  &__three-rectangles {
     display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
+    border-bottom: $grey-border;
+  }
 
-    &__three-rectangles {
-        display: flex;
-        border-bottom: $grey-border;
+  &__rectangles {
+    min-width: 107px;
+    min-height: 94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:nth-child(1) {
+      border-right: $grey-border;
     }
 
-    &__rectangles {
-        min-width: 107px;
-        min-height: 94px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &:nth-child(1) {
-            border-right: $grey-border;
-        }
-
-        &:nth-child(2) {
-            border-right: $grey-border;
-        }
-
+    &:nth-child(2) {
+      border-right: $grey-border;
     }
+  }
 
-    &__img {
-        filter: brightness(0);
-        max-width: 70%;
-    }
+  &__img {
+    filter: brightness(0);
+    max-width: 70%;
+  }
 }

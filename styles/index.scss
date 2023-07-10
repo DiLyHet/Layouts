@@ -1,53 +1,53 @@
-@import './header.scss';
-@import './footer.scss';
-@import './header-section.scss';
-@import './about.scss';
-@import './customers.scss';
-@import './features.scss';
-@import './inbox.scss';
-@import './communication.scss';
-@import './audience.scss';
-@import './feedback.scss';
-@import './hiring.scss';
-@import './order.scss';
-@import './breakpoints.scss';
-@import './variables.scss';
+@import "./header.scss";
+@import "./footer.scss";
+@import "./header-section.scss";
+@import "./about.scss";
+@import "./customers.scss";
+@import "./features.scss";
+@import "./inbox.scss";
+@import "./communication.scss";
+@import "./audience.scss";
+@import "./feedback.scss";
+@import "./hiring.scss";
+@import "./order.scss";
+@import "./breakpoints.scss";
+@import "./variables.scss";
 
 .body {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 .page {
-    max-width: 320px;
-    min-height: 100vh;
-    font-family: $main-font-family;
-    font-size: $main-font-size;
+  max-width: 320px;
+  min-height: 100vh;
+  font-family: $main-font-family;
+  font-size: $main-font-size;
 }
 
-.first-type-text {
-    color: $first-text-color;
-    font-size: 40px;
-    font-weight: $bold;
-    line-height: 40px;
-    letter-spacing: -0.357px;
+.title-type-text {
+  color: $base-text-color;
+  font-size: 40px;
+  font-weight: $bold;
+  line-height: 40px;
+  letter-spacing: -0.357px;
 }
 
-.second-type-text {
-    color: rgba(43, 41, 45, 1);
-    font-size: 22px;
-    line-height: 32px;
+.order-type-text {
+  color: rgba(43, 41, 45, 1);
+  font-size: 22px;
+  line-height: 32px;
 }
 
-.third-type-text {
-    color: rgba(43, 41, 45, 1);
-    font-size: 18px;
-    line-height: 13px;
+.button-type-text {
+  color: rgba(43, 41, 45, 1);
+  font-size: 18px;
+  line-height: 13px;
 }
 
-.fourth-type-text {
-    color: $second-text-color;
-    font-size: 14px;
-    line-height: 22px;
+.tooltip-type-text {
+  color: $subordinate-text-color;
+  font-size: 14px;
+  line-height: 22px;
 }

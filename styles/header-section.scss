@@ -1,86 +1,86 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 .header-section {
-    height: 826px;
+  height: 826px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(243, 198, 189, 1);
+
+  &__main {
+    max-width: 1400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(243, 198, 189, 1);
+    margin-top: 35px;
+  }
 
-    &__main {
-        max-width: 1400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 35px;
+  &__big-text {
+    width: 290px;
+    height: 205px;
+    line-height: 50px;
+    font-weight: $bold;
+    color: $base-text-color;
+    font-size: 50px;
+    letter-spacing: -0.312px;
+  }
+
+  &__small-text {
+    width: 290px;
+    height: 172px;
+    margin-top: 24px;
+    line-height: 34px;
+    font-size: 24px;
+    color: $base-text-color;
+  }
+
+  &__base-button {
+    width: 290px;
+    height: 48px;
+    margin-top: 30px;
+    background-color: $blue-button-color;
+    border: none;
+    border-radius: $button-border-radius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_text {
+      font-weight: $bold;
+      line-height: 13px;
+      font-size: 18px;
+      color: $blue-button-text-color;
     }
+  }
 
-    &__big-text {
-        width: 290px;
-        height: 205px;
-        line-height: 50px;
-        font-weight: $bold;
-        color: $first-text-color;
-        font-size: 50px;
-        letter-spacing: -0.312px;
+  &__subordinate-button {
+    width: 290px;
+    height: 48px;
+    margin-top: 15px;
+    background-color: $white-button-color;
+    border: none;
+    border-radius: $button-border-radius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_text {
+      font-weight: $bold;
+      line-height: 13px;
+      font-size: 18px;
+      color: $white-button-text-color;
     }
+  }
 
-    &__small-text {
-        width: 290px;
-        height: 172px;
-        margin-top: 24px;
-        line-height: 34px;
-        font-size: 24px;
-        color: $first-text-color;
+  &__img {
+    width: 320px;
+    height: 180px;
+    margin-top: 33px;
+    margin-bottom: 36px;
+
+    &_icon {
+      width: 320px;
+      height: 180px;
     }
-
-    &__first-button {
-        width: 290px;
-        height: 48px;
-        margin-top: 30px;
-        background-color: $blue-button-color;
-        border: none;
-        border-radius: $button-border-radius;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &_text {
-            font-weight: $bold;
-            line-height: 13px;
-            font-size: 18px;
-            color: $blue-button-text-color;
-        }
-    }
-
-    &__second-button {
-        width: 290px;
-        height: 48px;
-        margin-top: 15px;
-        background-color: $white-button-color;
-        border: none;
-        border-radius: $button-border-radius;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &_text {
-            font-weight: $bold;
-            line-height: 13px;
-            font-size: 18px;
-            color: $white-button-text-color;
-        }
-    }
-
-    &__img {
-        width: 320px;
-        height: 180px;
-        margin-top: 33px;
-        margin-bottom: 36px;
-
-        &_icon {
-            width: 320px;
-            height: 180px;
-        }
-    }
+  }
 }
