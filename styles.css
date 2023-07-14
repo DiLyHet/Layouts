@@ -1687,8 +1687,12 @@
     flex-direction: column;
   }
 }
+.audience__minor {
+  margin-top: 25px;
+}
 @media screen and (min-width: 1400px) {
   .audience__minor {
+    margin-top: 96px;
     display: flex;
     width: 1140px;
     justify-content: space-between;

@@ -291,7 +291,11 @@
   }
 
   &__minor {
+
+    margin-top: 25px;
+
     @include for-desktop-version {
+      margin-top: 96px;
       display: flex;
       width: 1140px;
       justify-content: space-between;
