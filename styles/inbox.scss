@@ -1,10 +1,21 @@
 @import "./variables.scss";
+@import "./breakpoints.scss";
 
 .inbox {
   display: flex;
   flex-direction: column;
   background-color: rgba(252, 240, 227, 1);
   align-items: center;
+
+  @include for-desktop-version {
+    min-width: 1400px;
+    min-height: 790px;
+    flex-direction: row;
+  }
+
+  @include from-mobile-to-desktop-version {
+    min-width: 100vw;
+  }
 
   &__img {
     display: flex;
@@ -14,9 +25,37 @@
     height: 348px;
     margin-top: 50px;
 
+    @include for-desktop-version {
+      width: 425px;
+      height: 510px;
+      margin-top: 142px;
+      margin-left: 193px;
+    }
+
     &_icon {
       width: 290px;
       height: 348px;
+
+      @include for-desktop-version {
+        width: 425px;
+        height: 510px;
+      }
+    }
+
+    &_text {
+      @include for-desktop-version {
+        width: 283px;
+        height: 22px;
+        font-size: 14px;
+        line-height: 22px;
+        color: $subordinate-text-color;
+        margin-top: 15px;
+        margin-left: 264px;
+      }
+
+      @include for-mobile-version {
+        display: none;
+      }
     }
   }
 
@@ -28,12 +67,27 @@
     font-size: 22px;
     font-weight: $bold;
     line-height: 34px;
+
+    @include for-desktop-version {
+      width: 125px;
+      margin-top: 115px;
+      margin-left: 28px;
+    }
   }
 
   &__subordinate-title {
     width: 290px;
     height: 80px;
     margin-top: 17px;
+
+    @include for-desktop-version {
+      width: 462px;
+      height: 112px;
+      margin-top: 24px;
+      margin-left: 28px;
+      line-height: 56px !important;
+      font-size: 56px !important;
+    }
   }
 
   &__text {
@@ -43,6 +97,13 @@
     color: $base-text-color;
     font-size: 24px;
     line-height: 34px;
+
+    @include for-desktop-version {
+      width: 461px;
+      height: 102px;
+      margin-top: 30px;
+      margin-left: 28px;
+    }
   }
 
   &__cutting {
@@ -57,6 +118,13 @@
     align-items: center;
     border-bottom: 4px solid rgba(1, 133, 208, 1);
 
+    @include for-desktop-version {
+      width: 519px;
+      height: 213px;
+      margin-top: 44px;
+      align-items: baseline;
+    }
+
     &_phrase {
       margin-top: 30px;
       color: $base-text-color;
@@ -64,11 +132,21 @@
       line-height: 28px;
       width: 250px;
       height: 169px;
+
+      @include for-desktop-version {
+        width: 459px;
+        height: 85px;
+        margin-left: 30px;
+      }
     }
 
     &_autor {
       display: flex;
       margin-bottom: 28px;
+
+      @include for-desktop-version {
+        margin-bottom: 24px;
+      }
     }
 
     &_autor-avatar {
@@ -76,6 +154,10 @@
       width: 40px;
       height: 40px;
       margin-right: 11px;
+
+      @include for-desktop-version {
+        margin-left: 0;
+      }
     }
 
     &_autor-avatar-icon {
@@ -87,6 +169,11 @@
       margin-right: 20px;
       width: 199px;
       height: 66px;
+
+      @include for-desktop-version {
+        width: 225px;
+        height: 44px;
+      }
     }
 
     &_autor-name-name {
@@ -100,6 +187,18 @@
       color: $subordinate-text-color;
       font-size: 16px;
       line-height: 22px;
+    }
+  }
+
+  &__paramount {
+    @include for-desktop-version {
+      width: 782px;
+    }
+  }
+
+  &__minor {
+    @include for-desktop-version {
+      width: 618px;
     }
   }
 }

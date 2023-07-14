@@ -17,6 +17,10 @@
   width: 100vw;
   display: flex;
   justify-content: center;
+
+  @include for-desktop-version {
+    max-width: 100vh;
+  }
 }
 
 .page {
@@ -24,6 +28,19 @@
   min-height: 100vh;
   font-family: $main-font-family;
   font-size: $main-font-size;
+
+  @include for-desktop-version {
+    min-width: 1400px;
+    margin: auto;
+  }
+
+  @include from-mobile-to-desktop-version {
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .title-type-text {

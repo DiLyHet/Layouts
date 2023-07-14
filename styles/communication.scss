@@ -1,9 +1,19 @@
 @import "./variables.scss";
+@import "./breakpoints.scss";
 
 .communication {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include for-desktop-version {
+    min-width: 1400px;
+    min-height: 866px;
+  }
+
+  @include from-mobile-to-desktop-version {
+    min-width: 100vw;
+  }
 
   &__base-part {
     display: flex;
@@ -17,12 +27,27 @@
       line-height: 34px;
       width: 290px;
       height: 34px;
+
+      @include for-desktop-version {
+        margin-top: 123px;
+        width: 225px;
+        height: 34px;
+      }
     }
 
     &_subordinate-title {
       margin-top: 17px;
       width: 290px;
       height: 80px;
+
+      @include for-desktop-version {
+        margin-top: 24px;
+        width: 462px;
+        height: 112px;
+        font-size: 56px !important;
+        line-height: 56px !important;
+        letter-spacing: -0.5px !important;
+      }
     }
 
     &_text {
@@ -32,6 +57,12 @@
       line-height: 34px;
       width: 290px;
       height: 167px;
+
+      @include for-desktop-version {
+        margin-top: 30px;
+        width: 461px;
+        height: 102px;
+      }
     }
 
     &_button {
@@ -44,6 +75,10 @@
       align-items: center;
       width: 160px;
       height: 48px;
+
+      @include for-desktop-version {
+        margin-top: 39px;
+      }
     }
 
     &_button-text {
@@ -57,11 +92,23 @@
       margin-top: 40px;
       width: 290px;
       height: 291px;
+
+      @include for-desktop-version {
+        margin-top: 110px;
+        width: 425px;
+        height: 426px;
+        margin-left: 194px;
+      }
     }
 
     &_img-icon {
       width: 290px;
       height: 291px;
+
+      @include for-desktop-version {
+        width: 425px;
+        height: 426px;
+      }
     }
 
     &_phrase {
@@ -72,6 +119,12 @@
       line-height: 22px;
       width: 290px;
       height: 22px;
+
+      @include for-desktop-version {
+        margin-top: 15px;
+        margin-left: 290px;
+        width: 235px;
+      }
     }
 
     &_phrase-bottom {
@@ -79,6 +132,11 @@
       width: 150px;
       margin-left: 15px;
       border-bottom: $grey-border;
+
+      @include for-desktop-version {
+        height: 26px;
+        margin-left: 0;
+      }
     }
   }
 
@@ -87,6 +145,13 @@
     flex-direction: column;
     align-items: center;
 
+    @include for-desktop-version {
+      flex-direction: row;
+      width: 1144px;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
     &_base-text {
       width: 290px;
       height: 138px;
@@ -94,6 +159,12 @@
       flex-direction: column;
       justify-content: space-between;
       margin-top: 33px;
+
+      @include for-desktop-version {
+        width: 360px;
+        height: 115px;
+        margin-top: 41px;
+      }
     }
 
     &_base-text-text {
@@ -117,6 +188,12 @@
       flex-direction: column;
       justify-content: space-between;
       margin-top: 33px;
+
+      @include for-desktop-version {
+        width: 360px;
+        height: 115px;
+        margin-top: 41px;
+      }
     }
 
     &_subordinate-text-text {
@@ -141,6 +218,13 @@
       justify-content: space-between;
       margin-top: 32px;
       margin-bottom: 50px;
+
+      @include for-desktop-version {
+        width: 360px;
+        height: 115px;
+        margin-top: 41px;
+        margin-bottom: 0;
+      }
     }
 
     &_accessory-text-text {
@@ -155,6 +239,20 @@
       font-weight: $bold;
       line-height: 26px;
       text-decoration: underline;
+    }
+  }
+
+  &__paramount {
+    @include for-desktop-version {
+      display: flex;
+      flex-direction: column;
+      width: 1144px;
+    }
+  }
+
+  &__minor {
+    @include for-desktop-version {
+      display: flex;
     }
   }
 }

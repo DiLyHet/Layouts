@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./breakpoints.scss";
 
 .header-section {
   height: 826px;
@@ -7,12 +8,21 @@
   align-items: center;
   background-color: rgba(243, 198, 189, 1);
 
+  @include for-desktop-version {
+    flex-direction: row;
+    max-height: 609px;
+  }
+
   &__main {
     max-width: 1400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 35px;
+
+    @include for-desktop-version {
+      flex-direction: row;
+    }
   }
 
   &__big-text {
@@ -23,6 +33,17 @@
     color: $base-text-color;
     font-size: 50px;
     letter-spacing: -0.312px;
+
+    @include for-desktop-version {
+      margin-top: 0;
+      width: 754px;
+      height: 165px;
+      margin-left: 0;
+      line-height: 78px;
+      font-size: 80px;
+      letter-spacing: -0.5px;
+      z-index: 1;
+    }
   }
 
   &__small-text {
@@ -32,6 +53,12 @@
     line-height: 34px;
     font-size: 24px;
     color: $base-text-color;
+
+    @include for-desktop-version {
+      width: 456px;
+      height: 102px;
+      margin-top: 34px;
+    }
   }
 
   &__base-button {
@@ -45,11 +72,24 @@
     justify-content: center;
     align-items: center;
 
+    @include for-desktop-version {
+      width: 160px;
+      margin-top: 58px;
+      margin-right: 10px;
+    }
+
     &_text {
       font-weight: $bold;
       line-height: 13px;
       font-size: 18px;
       color: $blue-button-text-color;
+
+      @include for-desktop-version {
+        font-weight: $bold;
+        line-height: 13px;
+        font-size: 18px;
+        color: $blue-button-text-color;
+      }
     }
   }
 
@@ -64,11 +104,23 @@
     justify-content: center;
     align-items: center;
 
+    @include for-desktop-version {
+      width: 158px;
+      margin-top: 58px;
+    }
+
     &_text {
       font-weight: $bold;
       line-height: 13px;
       font-size: 18px;
       color: $white-button-text-color;
+
+      @include for-desktop-version {
+        font-weight: $bold;
+        line-height: 13px;
+        font-size: 18px;
+        color: $white-button-text-color;
+      }
     }
   }
 
@@ -81,6 +133,39 @@
     &_icon {
       width: 320px;
       height: 180px;
+    }
+  }
+
+  &__img {
+    @include for-desktop-version {
+      width: 796px;
+      height: 448px;
+      margin-top: 185px;
+      margin-bottom: 77px;
+      position: relative;
+      right: 300px;
+      top: -25px;
+    }
+
+    &_icon {
+      @include for-desktop-version {
+        width: 796px;
+        height: 448px;
+      }
+    }
+  }
+
+  &__paramount {
+    @include for-desktop-version {
+      display: flex;
+      flex-direction: column;
+      margin-left: 130px;
+    }
+  }
+
+  &__minor {
+    @include for-desktop-version {
+      display: flex;
     }
   }
 }

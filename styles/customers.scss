@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./breakpoints.scss";
 
 .customers {
   height: 189px;
@@ -6,9 +7,31 @@
   flex-direction: column;
   box-sizing: border-box;
 
+  @include for-desktop-version {
+    min-width: 1400px;
+    min-height: 255px;
+    flex-direction: row;
+  }
+
+  @include from-mobile-to-desktop-version {
+    min-width: 100vw;
+    align-items: center;
+  }
+
   &__three-rectangles {
     display: flex;
     border-bottom: $grey-border;
+
+    @include for-desktop-version {
+      width: 582.5px;
+      border-bottom: none;
+    }
+
+    &:nth-child(1) {
+      @include for-desktop-version {
+        margin-left: 130px;
+      }
+    }
   }
 
   &__rectangles {
@@ -17,6 +40,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include for-desktop-version {
+      width: 185px !important;
+      border: none !important;
+    }
 
     &:nth-child(1) {
       border-right: $grey-border;
@@ -30,5 +58,9 @@
   &__img {
     filter: brightness(0);
     max-width: 70%;
+
+    @include for-desktop-version {
+      max-width: 100%;
+    }
   }
 }

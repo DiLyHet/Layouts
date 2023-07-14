@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./breakpoints.scss";
 
 .header {
   height: 64px;
@@ -6,18 +7,87 @@
   display: flex;
   align-items: center;
 
+  @include for-desktop-version {
+    width: 1140px;
+    min-height: 62px;
+    align-items: center;
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-top: 39px;
+  }
+
+  &__button {
+    @include for-desktop-version {
+      width: 160px;
+      height: 48px;
+      border: none;
+      border-radius: 2px;
+      background-color: rgba(48, 64, 196, 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include for-mobile-version {
+      display: none;
+    }
+  }
+
+  &__button-text {
+    @include for-desktop-version {
+      width: 104px;
+      height: 13px;
+      color: rgba(255, 255, 255, 1);
+      font-size: 18px;
+      font-weight: $bold;
+      line-height: 13px;
+    }
+  }
+
   &__logo {
     display: flex;
+
+    @include for-desktop-version {
+      width: 360px;
+      height: 62px;
+      align-items: center;
+      margin-left: 0px;
+    }
+
+    &_text-subordinate {
+      @include for-desktop-version {
+        width: 300px;
+        color: rgba(43, 41, 45, 0.6);
+        font-size: 20px;
+        line-height: 25px;
+        margin-left: 15px;
+      }
+
+      @include for-mobile-version {
+        display: none;
+      }
+    }
 
     &_icon {
       width: 48px;
       height: 48px;
       margin: 8px 0px 8px 15px;
+
+      @include for-desktop-version {
+        width: 60px;
+        height: 60px;
+        margin: 0px;
+      }
     }
 
     &_icon-img {
       width: 48px;
       height: 48px;
+
+      @include for-desktop-version {
+        width: 60px;
+        height: 60px;
+      }
     }
 
     &_text {
@@ -25,6 +95,20 @@
       font-weight: $bold;
       color: $base-text-color;
       font-size: 20px;
+
+      @include for-desktop-version {
+        line-height: 25px;
+        margin-left: 15px;
+      }
+    }
+
+    &_t {
+      @include for-desktop-version {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 51px;
+      }
     }
   }
 
@@ -32,11 +116,83 @@
     margin-left: auto;
     border-left: $grey-border;
 
+    @include for-desktop-version {
+      border: none;
+      display: flex;
+      align-items: center;
+    }
+
     &_icon {
       margin-left: 20px;
       margin-right: 20px;
       width: 18px;
       height: 13px;
+
+      @include for-desktop-version {
+        display: none;
+      }
     }
+
+    &_items {
+      @include for-desktop-version {
+        display: flex;
+        width: 273px;
+        height: 25px;
+        justify-content: space-between;
+        margin-top: 7px;
+      }
+
+      @include for-mobile-version {
+        display: none;
+      }
+    }
+
+    &_items-item {
+      @include for-desktop-version {
+        color: rgba(43, 41, 45, 1);
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+
+    &_items-item-selected {
+      @include for-desktop-version {
+        color: rgba(0, 0, 0, 1);
+        font-weight: $bold;
+      }
+    }
+
+    &_arrow {
+      @include for-desktop-version {
+        margin-right: 56px;
+        margin-left: 11px;
+        margin-top: 0;
+        width: 8px;
+      }
+
+      @include for-mobile-version {
+        display: none;
+      }
+    }
+
+    &_arrow-img {
+      @include for-desktop-version {
+        width: 8px;
+      }
+    }
+  }
+}
+
+.top-section {
+  @include for-desktop-version {
+    height: 710px;
+    min-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(243, 198, 189, 1);
+  }
+
+  @include from-mobile-to-desktop-version {
+    min-width: 100vw;
   }
 }

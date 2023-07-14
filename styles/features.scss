@@ -1,9 +1,18 @@
 @import "./variables.scss";
+@import "./breakpoints.scss";
 
 .features {
   display: flex;
   flex-direction: column;
   height: 2729px;
+
+  @include for-desktop-version {
+    display: none;
+  }
+
+  @include from-mobile-to-desktop-version {
+    min-width: 100vw;
+  }
 
   &__base-part {
     display: flex;
@@ -108,10 +117,14 @@
   }
 }
 
-.features-1 {
+.features-desktop {
   display: flex;
   min-width: 1400px;
   min-height: 602px;
+
+  @include for-mobile-version {
+    display: none;
+  }
 
   &__minor {
     display: flex;

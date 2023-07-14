@@ -1,10 +1,20 @@
 @import "./variables.scss";
+@import "./breakpoints.scss";
 
 .audience {
   background-color: rgba(0, 161, 198, 0.07000000029802322);
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include for-desktop-version {
+    min-width: 1400px;
+    min-height: 983px;
+  }
+
+  @include from-mobile-to-desktop-version {
+    min-width: 100vw;
+  }
 
   &__base-title {
     width: 290px;
@@ -15,6 +25,11 @@
     font-size: 22px;
     font-weight: $bold;
     line-height: 34px;
+
+    @include for-desktop-version {
+      width: 555px;
+      margin-top: 108px;
+    }
   }
 
   &__subordinate-title {
@@ -22,6 +37,15 @@
     height: 80px;
     margin-top: 17px;
     text-align: center;
+
+    @include for-desktop-version {
+      width: 555px;
+      height: 112px;
+      margin-top: 24px;
+      font-size: 56px !important;
+      line-height: 56px !important;
+      letter-spacing: -0.5px !important;
+    }
   }
 
   &__text {
@@ -32,6 +56,12 @@
     color: rgba(43, 41, 45, 1);
     font-size: 24px;
     line-height: 34px;
+
+    @include for-desktop-version {
+      width: 555px;
+      height: 72px;
+      margin-top: 30px;
+    }
   }
 
   &__base-button {
@@ -44,6 +74,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include for-desktop-version {
+      width: 160px;
+      margin-top: 0;
+      margin-right: 10px;
+    }
 
     &_text {
       color: rgba(255, 255, 255, 1) !important;
@@ -59,6 +95,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include for-desktop-version {
+      width: 158px;
+      margin-top: 0;
+    }
 
     &_text {
       color: rgba(0, 0, 0, 1) !important;
@@ -85,8 +126,16 @@
       0px 1px 0px 0px rgba(255, 255, 255, 0.1) inset;
     align-items: center;
 
+    @include for-desktop-version {
+      width: 262px;
+    }
+
     &_base {
       margin-top: 40px;
+
+      @include for-desktop-version {
+        margin-top: 0;
+      }
     }
 
     &_subordinate {
@@ -95,6 +144,10 @@
 
     &_fourth {
       margin-bottom: 50px;
+
+      @include for-desktop-version {
+        margin-bottom: 0;
+      }
     }
 
     &_base-icon {
@@ -112,12 +165,29 @@
       font-size: 22px;
       font-weight: $bold;
       line-height: 28px;
+
+      @include for-desktop-version {
+        width: 250px;
+        height: 28px;
+        text-align: center;
+        margin-top: 22px;
+        color: rgba(43, 41, 45, 1);
+        font-size: 22px;
+        font-weight: $bold;
+        line-height: 28px;
+      }
     }
 
     &_subordinate-icon {
       width: 142px;
       height: 195px;
       margin-top: 22px;
+
+      @include for-desktop-version {
+        width: 142px;
+        height: 195px;
+        margin-top: 22px;
+      }
     }
 
     &_subordinate-text {
@@ -129,12 +199,29 @@
       font-size: 22px;
       font-weight: $bold;
       line-height: 28px;
+
+      @include for-desktop-version {
+        width: 250px;
+        height: 28px;
+        text-align: center;
+        margin-top: 22px;
+        color: rgba(255, 255, 255, 1);
+        font-size: 22px;
+        font-weight: $bold;
+        line-height: 28px;
+      }
     }
 
     &_accessory-icon {
       width: 160px;
       height: 195px;
       margin-top: 22px;
+
+      @include for-desktop-version {
+        width: 160px;
+        height: 195px;
+        margin-top: 22px;
+      }
     }
 
     &_accessory-text {
@@ -146,6 +233,17 @@
       font-size: 22px;
       font-weight: $bold;
       line-height: 28px;
+
+      @include for-desktop-version {
+        width: 250px;
+        height: 28px;
+        text-align: center;
+        margin-top: 22px;
+        color: rgba(43, 41, 45, 1);
+        font-size: 22px;
+        font-weight: $bold;
+        line-height: 28px;
+      }
     }
 
     &_fourth-icon {
@@ -153,6 +251,13 @@
       height: 195px;
       margin-top: 22px;
       margin-top: 1px;
+
+      @include for-desktop-version {
+        width: 119px;
+        height: 195px;
+        margin-top: 22px;
+        margin-left: 0px;
+      }
     }
 
     &_fourth-text {
@@ -164,6 +269,41 @@
       font-size: 22px;
       font-weight: $bold;
       line-height: 28px;
+
+      @include for-desktop-version {
+        width: 212px;
+        height: 28px;
+        text-align: center;
+        margin-top: 22px;
+        color: rgba(43, 41, 45, 1);
+        font-size: 22px;
+        font-weight: $bold;
+        line-height: 28px;
+      }
+    }
+  }
+
+  &__paramount {
+    @include for-desktop-version {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__minor {
+    @include for-desktop-version {
+      display: flex;
+      width: 1140px;
+      justify-content: space-between;
+    }
+  }
+
+  &__post-minor {
+    @include for-desktop-version {
+      display: flex;
+      margin-top: 34px;
+      width: 555px;
+      justify-content: center;
     }
   }
 }

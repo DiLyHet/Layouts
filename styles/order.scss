@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./breakpoints.scss";
 
 .order {
   background-color: rgba(244, 245, 247, 1);
@@ -6,14 +7,36 @@
   flex-direction: column;
   align-items: center;
 
+  @include for-desktop-version {
+    flex-direction: row;
+    min-width: 1400px;
+    min-height: 441px;
+  }
+
+  @include from-mobile-to-desktop-version {
+    min-width: 100vw;
+  }
+
   &__img {
     width: 200px;
     height: 220px;
     margin-top: 50px;
 
+    @include for-desktop-version {
+      width: 269.406px;
+      height: 296px;
+      margin-top: 50px;
+      margin-left: 224px;
+    }
+
     &_icon {
       width: 200px;
       height: 220px;
+
+      @include for-desktop-version {
+        width: 269.406px;
+        height: 296px;
+      }
     }
   }
 
@@ -21,12 +44,30 @@
     margin-top: 40px;
     width: 290px;
     height: 80px;
+
+    @include for-desktop-version {
+      margin-top: 106px;
+      width: 555px;
+      height: 48px;
+    }
   }
 
   &__text {
     margin-top: 18px;
     width: 290px;
     height: 167px;
+
+    @include for-desktop-version {
+      margin-top: 12px;
+      width: 555px;
+      height: 64px;
+    }
+
+    &_text {
+      @include for-desktop-version {
+        margin-left: 15px;
+      }
+    }
   }
 
   &__input {
@@ -38,6 +79,14 @@
     align-items: center;
     border: $grey-border;
     border-radius: $button-border-radius;
+
+    @include for-desktop-version {
+      margin-top: 26px;
+      width: 385px;
+      display: flex;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 1);
+    }
 
     &_text {
       width: 146px;
@@ -55,6 +104,12 @@
     justify-content: center;
     align-items: center;
 
+    @include for-desktop-version {
+      margin-top: 26px;
+      margin-left: 10px;
+      width: 160px;
+    }
+
     &_text {
       font-weight: $bold;
       color: $blue-button-text-color !important;
@@ -67,9 +122,36 @@
     margin-top: 10px;
     margin-bottom: 50px;
 
+    @include for-desktop-version {
+      width: 555px;
+      height: 22px;
+    }
+
     &_link {
       text-decoration: underline;
       color: rgba(49, 66, 198, 1);
+    }
+  }
+
+  &__minor_secondary {
+    @include for-desktop-version {
+      display: flex;
+    }
+  }
+
+  &__paramount {
+    @include for-desktop-version {
+      width: 615px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__minor {
+    @include for-desktop-version {
+      width: 785px;
+      display: flex;
+      flex-direction: column;
     }
   }
 }

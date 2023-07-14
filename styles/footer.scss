@@ -1,14 +1,34 @@
 @import "./variables.scss";
+@import "./breakpoints.scss";
 
 .footer {
   margin-top: auto;
   display: flex;
   flex-direction: column;
 
+  @include for-desktop-version {
+    min-width: 1400px;
+    min-height: 389px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include from-mobile-to-desktop-version {
+    min-width: 100vw;
+  }
+
   &__up-side {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include for-desktop-version {
+      align-items: baseline;
+    }
+
+    @include for-mobile-version {
+      display: none;
+    }
 
     &_links {
       display: flex;
@@ -21,12 +41,22 @@
       height: 60px;
       margin-top: 40px;
       padding: 0;
+
+      @include for-desktop-version {
+        width: 66px;
+        height: 60px;
+      }
     }
 
     &_icon-img {
       width: 65px;
       height: 60px;
       padding: 0;
+
+      @include for-desktop-version {
+        width: 66px;
+        height: 60px;
+      }
     }
 
     &_text {
@@ -36,6 +66,25 @@
       flex-direction: column;
       align-items: center;
       margin-top: 20px;
+
+      @include for-desktop-version {
+        width: 360px;
+        height: 85px;
+        align-items: baseline;
+        margin-left: 15px;
+        margin-top: 0;
+        position: relative;
+        top: -35px;
+        color: rgba(43, 41, 45, 0.6);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+      }
+
+      @include for-mobile-version {
+        display: none;
+      }
     }
 
     &_text-base {
@@ -52,6 +101,13 @@
       line-height: 25px;
     }
 
+    &_links {
+      @include for-desktop-version {
+        margin-top: 25px;
+        margin-bottom: 59px;
+      }
+    }
+
     &_links-appstore {
       width: 135px;
       height: 40px;
@@ -65,10 +121,33 @@
     &_links-space {
       width: 10px;
     }
+
+    &_logo {
+      @include for-desktop-version {
+        display: flex;
+        margin-top: 0;
+        justify-content: baseline;
+        align-items: baseline;
+      }
+
+      @include for-mobile-version {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   }
 
   &__down-side {
     border-top: 1px solid rgba(227, 227, 227, 1);
+
+    @include for-desktop-version {
+      display: flex;
+      justify-content: right;
+      border-top: none;
+      margin-top: 0px;
+      width: 785px;
+    }
 
     &_title {
       width: 290px;
@@ -98,6 +177,10 @@
       line-height: 22px;
       width: 180px;
       justify-content: space-between;
+
+      @include for-desktop-version {
+        margin-left: 130px;
+      }
     }
 
     &_other-links-item {
@@ -107,6 +190,10 @@
 
     &_social-links {
       margin-left: 15px;
+
+      @include for-desktop-version {
+        margin-right: 132px;
+      }
     }
 
     &_social-links-img:nth-child(1) {
@@ -134,10 +221,38 @@
     }
 
     &_company,
-    &_products,
+    &_products {
+      margin-left: 15px;
+      margin-top: 30px;
+
+      @include for-desktop-version {
+        margin-top: 0;
+        height: 210px;
+        width: 265px;
+      }
+    }
+
     &_other-links {
       margin-left: 15px;
       margin-top: 30px;
+    }
+  }
+
+  &__paramount {
+    @include for-desktop-version {
+      display: flex;
+      width: 1400px;
+      justify-content: center;
+      align-items: center;
+      border-bottom: $grey-border;
+    }
+  }
+
+  &__minor {
+    @include for-desktop-version {
+      display: flex;
+      width: 1400px;
+      justify-content: space-between;
     }
   }
 }
