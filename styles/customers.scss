@@ -2,9 +2,9 @@
 @import "./breakpoints.scss";
 
 .customers {
-  height: 189px;
   display: flex;
   flex-direction: column;
+  height: 189px;
   box-sizing: border-box;
 
   @include for-desktop {
@@ -35,11 +35,11 @@
   }
 
   &__rectangles {
-    min-width: 107px;
-    min-height: 94px;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 107px;
+    min-height: 94px;
 
     @include for-desktop {
       width: 185px !important;

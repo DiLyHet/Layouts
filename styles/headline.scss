@@ -2,10 +2,10 @@
 @import "./breakpoints.scss";
 
 .headline {
-  height: 826px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 826px;
   background-color: rgba(243, 198, 189, 1);
 
   @include for-desktop {
@@ -14,10 +14,10 @@
   }
 
   &__main {
-    max-width: 1400px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1400px;
     margin-top: 35px;
 
     @include for-desktop {
@@ -62,15 +62,15 @@
   }
 
   &__base-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 290px;
     height: 48px;
     margin-top: 30px;
     background-color: $blue-button-color;
     border: none;
     border-radius: $button-border-radius;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     @include for-desktop {
       width: 160px;
@@ -94,15 +94,15 @@
   }
 
   &__subordinate-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 290px;
     height: 48px;
     margin-top: 15px;
     background-color: $white-button-color;
     border: none;
     border-radius: $button-border-radius;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     @include for-desktop {
       width: 158px;

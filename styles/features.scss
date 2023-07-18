@@ -166,11 +166,11 @@
     }
 
     &_title-with-compas-img {
-      width: 24px;
-      height: 24px;
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 24px;
+      height: 24px;
     }
 
     &_title-with-compas-img-icon {
@@ -199,9 +199,9 @@
     }
 
     &_base-link {
-      margin-top: 21px;
       display: flex;
       align-items: center;
+      margin-top: 21px;
       padding-bottom: 21px;
       border-bottom: $grey-border;
     }
@@ -227,10 +227,10 @@
     }
 
     &_subordinate-link {
+      display: flex;
       margin-top: 21px;
       padding-bottom: 15px;
       border-bottom: $grey-border;
-      display: flex;
     }
 
     &_subordinate-link-img {

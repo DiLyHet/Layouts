@@ -2,10 +2,10 @@
 @import "./breakpoints.scss";
 
 .audience {
-  background-color: rgba(0, 161, 198, 0.07000000029802322);
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(0, 161, 198, 0.07000000029802322);
 
   @include for-desktop {
     min-width: 1400px;
@@ -65,15 +65,15 @@
   }
 
   &__base-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 290px;
     height: 48px;
     margin-top: 30px;
     border: none;
     border-radius: $button-border-radius;
     background-color: $blue-button-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     @include for-desktop {
       width: 160px;
@@ -88,13 +88,13 @@
   }
 
   &__subordinate-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 290px;
     height: 48px;
     margin-top: 12px;
     background-color: $white-button-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     @include for-desktop {
       width: 158px;
@@ -108,10 +108,11 @@
   }
 
   &__img {
-    width: 290px;
-    height: 300px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 290px;
+    height: 300px;
     margin-top: 15px;
     border-radius: 8px;
     background: linear-gradient(
@@ -124,7 +125,6 @@
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05),
       0px 1px 3px 0px rgba(0, 0, 0, 0.1),
       0px 1px 0px 0px rgba(255, 255, 255, 0.1) inset;
-    align-items: center;
 
     @include for-desktop {
       width: 262px;
@@ -295,19 +295,19 @@
     margin-top: 25px;
 
     @include for-desktop {
-      margin-top: 96px;
       display: flex;
-      width: 1140px;
       justify-content: space-between;
+      margin-top: 96px;
+      width: 1140px;
     }
   }
 
   &__post-minor {
     @include for-desktop {
       display: flex;
+      justify-content: center;
       margin-top: 34px;
       width: 555px;
-      justify-content: center;
     }
   }
 }

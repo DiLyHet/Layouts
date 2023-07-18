@@ -2,9 +2,9 @@
 @import "./breakpoints.scss";
 
 .footer {
-  margin-top: auto;
   display: flex;
   flex-direction: column;
+  margin-top: auto;
 
   @include for-desktop {
     min-width: 1400px;
@@ -60,11 +60,11 @@
     }
 
     &_text {
-      width: 290px;
-      height: 51px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 290px;
+      height: 51px;
       margin-top: 20px;
 
       @include for-desktop {
@@ -125,9 +125,9 @@
     &_logo {
       @include for-desktop {
         display: flex;
-        margin-top: 0;
         justify-content: baseline;
         align-items: baseline;
+        margin-top: 0;
       }
 
       @include for-mobile {
@@ -173,10 +173,10 @@
 
     &_other-links {
       display: flex;
+      justify-content: space-between;
       height: 22px;
       line-height: 22px;
       width: 180px;
-      justify-content: space-between;
 
       @include for-desktop {
         margin-left: 130px;
@@ -241,9 +241,9 @@
   &__paramount {
     @include for-desktop {
       display: flex;
-      width: 1400px;
       justify-content: center;
       align-items: center;
+      width: 1400px;
       border-bottom: $grey-border;
     }
   }
@@ -251,8 +251,8 @@
   &__minor {
     @include for-desktop {
       display: flex;
-      width: 1400px;
       justify-content: space-between;
+      width: 1400px;
     }
   }
 }

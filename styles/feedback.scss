@@ -50,10 +50,10 @@
   }
 
   &__author {
-    margin-top: 32px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 32px;
     width: 290px;
     height: 48px;
 
@@ -166,10 +166,10 @@
 
   &__latest-minor {
     @include for-desktop {
-      width: 750px;
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 750px;
     }
 
     @include for-mobile {

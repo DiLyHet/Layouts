@@ -66,13 +66,13 @@
     }
 
     &_button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-top: 30px;
       border: none;
       border-radius: $button-border-radius;
       background-color: $blue-button-color;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       width: 160px;
       height: 48px;
 
@@ -153,11 +153,11 @@
     }
 
     &_base-text {
-      width: 290px;
-      height: 138px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      width: 290px;
+      height: 138px;
       margin-top: 33px;
 
       @include for-desktop {
@@ -182,11 +182,11 @@
     }
 
     &_subordinate-text {
-      width: 290px;
-      height: 138px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      width: 290px;
+      height: 138px;
       margin-top: 33px;
 
       @include for-desktop {
@@ -211,11 +211,11 @@
     }
 
     &_accessory-text {
-      width: 290px;
-      height: 111px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      width: 290px;
+      height: 111px;
       margin-top: 32px;
       margin-bottom: 50px;
 

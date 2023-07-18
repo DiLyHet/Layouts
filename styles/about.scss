@@ -2,10 +2,10 @@
 @import "./breakpoints.scss";
 
 .about {
-  height: 428px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 428px;
   background-color: rgba(244, 245, 247, 1);
 
   @include for-desktop {
@@ -20,12 +20,12 @@
   }
 
   &__base-paragraph {
-    width: 290px;
-    height: 180px;
     display: flex;
     flex-direction: column;
-    margin-top: 46px;
     justify-content: space-between;
+    width: 290px;
+    height: 180px;
+    margin-top: 46px;
 
     @include for-desktop {
       width: 555px;
@@ -37,13 +37,13 @@
   }
 
   &__subordinate-paragraph {
-    width: 290px;
-    height: 136px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 290px;
+    height: 136px;
     margin-top: 20px;
     margin-bottom: 46px;
-    justify-content: space-between;
 
     @include for-desktop {
       width: 555px;
