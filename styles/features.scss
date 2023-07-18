@@ -6,11 +6,11 @@
   flex-direction: column;
   height: 2729px;
 
-  @include for-desktop-version {
+  @include for-desktop {
     display: none;
   }
 
-  @include from-mobile-to-desktop-version {
+  @include for-middle {
     min-width: 100vw;
   }
 
@@ -122,7 +122,7 @@
   min-width: 1400px;
   min-height: 602px;
 
-  @include for-mobile-version {
+  @include for-mobile {
     display: none;
   }
 

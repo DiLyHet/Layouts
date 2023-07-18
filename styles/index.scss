@@ -18,7 +18,7 @@
   display: flex;
   justify-content: center;
 
-  @include for-desktop-version {
+  @include for-desktop {
     max-width: 100vh;
   }
 }
@@ -29,12 +29,12 @@
   font-family: $main-font-family;
   font-size: $main-font-size;
 
-  @include for-desktop-version {
+  @include for-desktop {
     min-width: 1400px;
     margin: auto;
   }
 
-  @include from-mobile-to-desktop-version {
+  @include for-middle {
     min-width: 100vw;
     display: flex;
     flex-direction: column;

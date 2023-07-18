@@ -1,16 +1,16 @@
-@mixin for-desktop-version {
+@mixin for-desktop {
   @media screen and (min-width: 1400px) {
     @content;
   }
 }
 
-@mixin for-mobile-version {
+@mixin for-mobile {
   @media screen and (max-width: 1399.9px) {
     @content;
   }
 }
 
-@mixin from-mobile-to-desktop-version {
+@mixin for-middle {
   @media screen and (min-width: 321px) and (max-width: 1399.9px) {
     @content;
   }

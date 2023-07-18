@@ -6,12 +6,12 @@
   flex-direction: column;
   align-items: center;
 
-  @include for-desktop-version {
+  @include for-desktop {
     min-width: 1400px;
     min-height: 839px;
   }
 
-  @include from-mobile-to-desktop-version {
+  @include for-middle {
     min-width: 100vw;
   }
 
@@ -21,7 +21,7 @@
     height: 45px;
     margin-top: 50px;
 
-    @include for-desktop-version {
+    @include for-desktop {
       width: 750px;
       height: 62px;
       margin-top: 106px;
@@ -40,7 +40,7 @@
     line-height: 34px;
     margin-top: 18px;
 
-    @include for-desktop-version {
+    @include for-desktop {
       width: 555px;
       height: 72px;
       margin-top: 20px;
@@ -67,7 +67,7 @@
     margin-top: 30px;
     margin-bottom: 24px;
 
-    @include for-desktop-version {
+    @include for-desktop {
       width: 247px;
       margin-top: 28px;
       margin-bottom: 90px;
@@ -92,7 +92,7 @@
     justify-content: space-between;
     margin-top: 15px;
 
-    @include for-desktop-version {
+    @include for-desktop {
       width: 750px;
       height: 81px;
       margin-top: 20px;
@@ -107,7 +107,7 @@
       height: 140px;
       justify-content: space-between;
 
-      @include for-desktop-version {
+      @include for-desktop {
         flex-direction: row;
         width: 685px;
       }
@@ -121,14 +121,14 @@
       width: 200px;
       margin-top: 19px;
 
-      @include for-desktop-version {
+      @include for-desktop {
         width: 408px;
         margin-left: 25px;
         margin-top: 0;
       }
     }
 
-    &_block-text-text {
+    &_block-subtitle {
       color: rgba(43, 41, 45, 0.6000000238418579);
       font-size: 16px;
       line-height: 22px;
@@ -136,7 +136,7 @@
       height: 26px;
       margin-bottom: 19px;
 
-      @include for-desktop-version {
+      @include for-desktop {
         margin-bottom: 0;
         width: 232px;
         margin-left: 20px;
@@ -152,7 +152,7 @@
       width: 50px;
       height: 140px;
 
-      @include for-desktop-version {
+      @include for-desktop {
         background: none;
         width: 65px;
         height: 81px;
@@ -170,20 +170,20 @@
   }
 
   &_base-child {
-    @include for-desktop-version {
+    @include for-desktop {
       background-color: rgba(49, 65, 197, 1);
     }
   }
 
-  &_block-text-title-base-child,
-  &_block-text-text-base-child {
-    @include for-desktop-version {
+  &_caption,
+  &_subtitle {
+    @include for-desktop {
       color: rgba(255, 255, 255, 1);
     }
   }
 
-  &_block-arrow-icon-base-child {
-    @include for-desktop-version {
+  &_arrow {
+    @include for-desktop {
       content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png);
     }
   }

@@ -7,12 +7,12 @@
   align-items: center;
   border-bottom: $grey-border;
 
-  @include for-desktop-version {
+  @include for-desktop {
     min-width: 1400px;
     min-height: 354px;
   }
 
-  @include from-mobile-to-desktop-version {
+  @include for-middle {
     min-width: 100vw;
   }
 
@@ -25,7 +25,7 @@
     font-weight: $bold;
     line-height: 30px;
 
-    @include for-desktop-version {
+    @include for-desktop {
       margin-top: 0;
       width: 1140px;
       height: 30px;
@@ -41,7 +41,7 @@
     font-size: 24px;
     line-height: 34px;
 
-    @include for-desktop-version {
+    @include for-desktop {
       margin-top: 28px;
       width: 750px;
       height: 102px;
@@ -57,7 +57,7 @@
     width: 290px;
     height: 48px;
 
-    @include for-desktop-version {
+    @include for-desktop {
       margin-top: 34px;
       width: 750px;
     }
@@ -68,7 +68,7 @@
       font-weight: $bold;
       line-height: 24px;
 
-      @include for-desktop-version {
+      @include for-desktop {
         text-align: center;
       }
     }
@@ -78,7 +78,7 @@
       font-size: 16px;
       line-height: 24px;
 
-      @include for-desktop-version {
+      @include for-desktop {
         text-align: center;
       }
     }
@@ -91,7 +91,7 @@
     height: 12px;
     margin-top: 40px;
 
-    @include for-desktop-version {
+    @include for-desktop {
       width: 50px;
       height: 8px;
       margin-top: 38px;
@@ -104,7 +104,7 @@
       border-radius: 50%;
       background-color: rgba(49, 66, 197, 1);
 
-      @include for-desktop-version {
+      @include for-desktop {
         width: 8px;
         height: 8px;
       }
@@ -117,7 +117,7 @@
       border-radius: 50%;
       background-color: rgba(0, 0, 0, 0.14999999105930328);
 
-      @include for-desktop-version {
+      @include for-desktop {
         width: 8px;
         height: 8px;
       }
@@ -130,7 +130,7 @@
     width: 290px;
     height: 258px;
 
-    @include for-desktop-version {
+    @include for-desktop {
       margin-top: 82px;
       margin-left: 26px;
       margin-bottom: 0;
@@ -142,7 +142,7 @@
       width: 290px;
       height: 258px;
 
-      @include for-desktop-version {
+      @include for-desktop {
         width: 273px;
         height: 243px;
       }
@@ -150,14 +150,14 @@
   }
 
   &__paramount {
-    @include for-desktop-version {
+    @include for-desktop {
       display: flex;
       justify-content: center;
     }
   }
 
   &__minor {
-    @include for-desktop-version {
+    @include for-desktop {
       display: flex;
       flex-direction: column;
       margin-left: 325px;
@@ -165,14 +165,14 @@
   }
 
   &__latest-minor {
-    @include for-desktop-version {
+    @include for-desktop {
       width: 750px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
-    @include for-mobile-version {
+    @include for-mobile {
       display: flex;
       justify-content: center;
     }

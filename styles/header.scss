@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
 
-  @include for-desktop-version {
+  @include for-desktop {
     width: 1140px;
     min-height: 62px;
     align-items: center;
@@ -17,7 +17,7 @@
   }
 
   &__button {
-    @include for-desktop-version {
+    @include for-desktop {
       width: 160px;
       height: 48px;
       border: none;
@@ -28,13 +28,13 @@
       justify-content: center;
     }
 
-    @include for-mobile-version {
+    @include for-mobile {
       display: none;
     }
   }
 
   &__button-text {
-    @include for-desktop-version {
+    @include for-desktop {
       width: 104px;
       height: 13px;
       color: rgba(255, 255, 255, 1);
@@ -47,7 +47,7 @@
   &__logo {
     display: flex;
 
-    @include for-desktop-version {
+    @include for-desktop {
       width: 360px;
       height: 62px;
       align-items: center;
@@ -55,7 +55,7 @@
     }
 
     &_text-subordinate {
-      @include for-desktop-version {
+      @include for-desktop {
         width: 300px;
         color: rgba(43, 41, 45, 0.6);
         font-size: 20px;
@@ -63,7 +63,7 @@
         margin-left: 15px;
       }
 
-      @include for-mobile-version {
+      @include for-mobile {
         display: none;
       }
     }
@@ -73,7 +73,7 @@
       height: 48px;
       margin: 8px 0px 8px 15px;
 
-      @include for-desktop-version {
+      @include for-desktop {
         width: 60px;
         height: 60px;
         margin: 0px;
@@ -84,7 +84,7 @@
       width: 48px;
       height: 48px;
 
-      @include for-desktop-version {
+      @include for-desktop {
         width: 60px;
         height: 60px;
       }
@@ -96,14 +96,14 @@
       color: $base-text-color;
       font-size: 20px;
 
-      @include for-desktop-version {
+      @include for-desktop {
         line-height: 25px;
         margin-left: 15px;
       }
     }
 
     &_t {
-      @include for-desktop-version {
+      @include for-desktop {
         display: flex;
         flex-direction: column;
         width: 300px;
@@ -116,7 +116,7 @@
     margin-left: auto;
     border-left: $grey-border;
 
-    @include for-desktop-version {
+    @include for-desktop {
       border: none;
       display: flex;
       align-items: center;
@@ -128,13 +128,13 @@
       width: 18px;
       height: 13px;
 
-      @include for-desktop-version {
+      @include for-desktop {
         display: none;
       }
     }
 
     &_items {
-      @include for-desktop-version {
+      @include for-desktop {
         display: flex;
         width: 273px;
         height: 25px;
@@ -142,13 +142,13 @@
         margin-top: 7px;
       }
 
-      @include for-mobile-version {
+      @include for-mobile {
         display: none;
       }
     }
 
     &_items-item {
-      @include for-desktop-version {
+      @include for-desktop {
         color: rgba(43, 41, 45, 1);
         font-size: 18px;
         line-height: 25px;
@@ -156,27 +156,27 @@
     }
 
     &_items-item-selected {
-      @include for-desktop-version {
+      @include for-desktop {
         color: rgba(0, 0, 0, 1);
         font-weight: $bold;
       }
     }
 
     &_arrow {
-      @include for-desktop-version {
+      @include for-desktop {
         margin-right: 56px;
         margin-left: 11px;
         margin-top: 0;
         width: 8px;
       }
 
-      @include for-mobile-version {
+      @include for-mobile {
         display: none;
       }
     }
 
     &_arrow-img {
-      @include for-desktop-version {
+      @include for-desktop {
         width: 8px;
       }
     }
@@ -184,7 +184,7 @@
 }
 
 .top-section {
-  @include for-desktop-version {
+  @include for-desktop {
     height: 710px;
     min-width: 1400px;
     display: flex;
@@ -192,7 +192,7 @@
     background-color: rgba(243, 198, 189, 1);
   }
 
-  @include from-mobile-to-desktop-version {
+  @include for-middle {
     min-width: 100vw;
   }
 }

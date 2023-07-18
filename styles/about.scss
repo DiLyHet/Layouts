@@ -8,18 +8,18 @@
   align-items: center;
   background-color: rgba(244, 245, 247, 1);
 
-  @include for-desktop-version {
+  @include for-desktop {
     min-width: 1400px;
     min-height: 255px;
     flex-direction: row;
     align-items: center;
   }
 
-  @include from-mobile-to-desktop-version {
+  @include for-middle {
     min-width: 100vw;
   }
 
-  &__base-paragraf {
+  &__base-paragraph {
     width: 290px;
     height: 180px;
     display: flex;
@@ -27,7 +27,7 @@
     margin-top: 46px;
     justify-content: space-between;
 
-    @include for-desktop-version {
+    @include for-desktop {
       width: 555px;
       height: 102px;
       margin-left: 130px;
@@ -36,7 +36,7 @@
     }
   }
 
-  &__subordinate-paragraf {
+  &__subordinate-paragraph {
     width: 290px;
     height: 136px;
     display: flex;
@@ -45,7 +45,7 @@
     margin-bottom: 46px;
     justify-content: space-between;
 
-    @include for-desktop-version {
+    @include for-desktop {
       width: 555px;
       height: 102px;
       margin-top: 0;
